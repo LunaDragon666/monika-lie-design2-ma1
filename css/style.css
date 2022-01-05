@@ -28,23 +28,35 @@ body {
     min-height: 100vh;
 }
 
+/* Navigation bar */
 nav {
     align-items: center;
     background: white;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 1rem;
+    padding: 1rem 1.2rem;
+}
+
+.brand {
+    display: flex;
+    flex-direction: row;
+}
+
+.logo {
+    margin-right: 12px;
+    width: 28px;
 }
 
 h1 {
-    font-size: 2rem;
+    font-size: 2.8rem;
 }
 
 span {
     color: var(--secondary-color);
 }
 
+/* Header content */
 header {
     background: var(--secondary-color);
     color: var(--primary-color);
@@ -52,12 +64,14 @@ header {
     padding: 1rem 1rem 1rem 1rem;
 }
 
+/* Homepage's main content */
 main {
     flex: 1 1 100%;
     padding: 1rem 1rem 1rem;
 }
 
+/* Footer section */
 footer {
     background: var(--tertiary-color);
-    padding: 1rem 1rem;
+    padding: 1rem;
 }
