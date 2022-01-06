@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Home decoration." />
     <link href="css/style.css" rel="stylesheet" />
+    <link href="css/media.css" rel="stylesheet" />
     <title>Home Dec. | Home</title>
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
@@ -32,12 +33,12 @@
             </li>
         </ul>
         <ul class="user">
-            <li>
+            <li class="links">
                 <a href="#">
                     <i class="far fa-heart"></i>
                 </a>
             </li>
-            <li>
+            <li class="links">
                 <a href="#">
                     <i class="fas fa-shopping-basket"></i>
                 </a>
@@ -47,14 +48,49 @@
     </nav>
     <!-- Header content -->
         <header class="slider">
-            <img src="img/carousel/slider.jpg">
+            <!-- Slider -->
+            <section class="carousel">
+                <div class="carousel-inner">
+                    <input class="carousel-open" type="radio" id="carousel-1" name="carousel" aria-hidden="true" hidden="" checked="checked">
+                    <div class="carousel-item">
+                        <img src="img/carousel/slider.jpg">
+                    </div>
+                    <input class="carousel-open" type="radio" id="carousel-2" name="carousel" aria-hidden="true" hidden="">
+                    <div class="carousel-item">
+                        <img src="img/header.jpg">
+                    </div>
+                    <input class="carousel-open" type="radio" id="carousel-3" name="carousel" aria-hidden="true" hidden="">
+                    <div class="carousel-item">
+                        <img src="img/carousel/slider.jpg">
+                    </div>
+                    <label for="carousel-3" class="carousel-control prev control-1">‹</label>
+                    <label for="carousel-2" class="carousel-control next control-1">›</label>
+                    <label for="carousel-1" class="carousel-control prev control-2">‹</label>
+                    <label for="carousel-3" class="carousel-control next control-2">›</label>
+                    <label for="carousel-2" class="carousel-control prev control-3">‹</label>
+                    <label for="carousel-1" class="carousel-control next control-3">›</label>
+                    <ol class="carousel-indicators">
+                        <li>
+                            <label for="carousel-1" class="carousel-bullet">•</label>
+                        </li>
+                        <li>
+                            <label for="carousel-2" class="carousel-bullet">•</label>
+                        </li>
+                        <li>
+                            <label for="carousel-3" class="carousel-bullet">•</label>
+                        </li>
+                    </ol>
+                </div>
+            </section>
             <section class="header-content">
-                <h2>Create your perfectspace</h2>
+                <h2>Create your perfect space</h2>
             </section>
         </header>
     <!-- Homepage's main content -->
-    <main>Main</main>
+    <main>
+        <!-- add some more content here -->
+    </main>
     <!-- Footer bar -->
-    <footer>Footer</footer>
+    <footer>Copyright © 2022</footer>
 </body>
 </html>
