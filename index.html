@@ -14,10 +14,10 @@
 <body>
     <!-- Navigation bar -->
     <nav>
-        <div class="brand">
-        <img class="logo" src="img/logo.svg" alt="#">
-            <h1>Homedec<span>.</span></h1>
-        </div>
+            <a class="home-link" href="index.html">
+                <img class="logo" src="img/logo.svg" alt="#">
+                <h1>Homedec<span>.</span></h1>
+            </a>
         <ul>
             <li>
                 <a href="#">Rooms</a>
@@ -88,9 +88,93 @@
         </header>
     <!-- Homepage's main content -->
     <main>
+        <!-- Product/Sale section -->
+        <section class="products">
+            <div class="heading">
+                <h2>Decor</h2>
+            </div>
+            <img class="dec" src="img/products/plants.jpg" alt="#">
+            <img class="product1" src="img/products/basket.jpg" alt="#">
+            <img class="product2" src="img/products/candles.jpg" alt="#">
+            <img class="head" src="img/header.jpg" alt="#">
+        </section>
         <!-- add some more content here -->
+        <section class="categories">
+            <div class="heading2">
+                <h2>Rooms</h2>
+            </div>
+            <img class="office" src="img/categories/office.jpg" alt="#">
+            <img class="kitchen" src="img/categories/kitchen.jpg" alt="#">
+            <img class="bathroom" src="img/categories/bathroom.jpg" alt="#">
+            <img class="bedroom" src="img/categories/bedroom.jpg" alt="#">
+            <img class="livingroom" src="img/categories/livingroom.jpg" alt="#">
+        </section>
     </main>
     <!-- Footer bar -->
-    <footer>Copyright © 2022</footer>
+    <footer>
+        <section class="footer-columns">
+            <!-- Contact section -->
+            <div class="footer-column">
+                <h3>Contact</h3>
+                <b>Head office:</b>
+                <div class="adress-box">
+                    <p>696 Santa Clara Court</p>
+                    <p>Norwalk, CT 06851</p>
+                </div>
+                <p>+1-202-555-0137</p>
+                <a class="contact-link">costumerservice@homedec.com</a>
+            </div>
+            <!-- ... -->
+            <div class="footer-column">
+                <h3>Our products</h3>
+                <ul class="navigation">
+                    <li class="footer-links">
+                        <a href="#">Baskets & bins</a>
+                    </li>
+                    <li class="footer-links">
+                        <a href="#">Candles & lightning</a>
+                    </li>
+                    <li class="footer-links">
+                        <a href="#">Faux plants</a>
+                    </li>
+                    <li class="footer-links">
+                        <a href="#">Home accents</a>
+                    </li>
+                    <li class="footer-links">
+                        <a href="#">Mirrors</a>
+                    </li>
+                    <li class="footer-links">
+                        <a href="#">Rugs</a>
+                    </li>
+                    <li class="footer-links">
+                        <a href="#">Wallart</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- Subscribtion field -->
+            <div class="footer-column">
+                <h3>News</h3>
+                <p>Stay Updated on our newest, coming collections</p>
+                <form class="subscribe">
+                    <input type="text" placeholder="Your emial" name="email">
+                    <button class="confirm">Subscribe</button>
+                </form>
+            </div>
+            <!-- Social media -->
+            <div class="footer-column">
+                <h3>Follow</h3>
+                <a class="social-links">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a class="social-links">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a class="social-links">
+                    <i class="fab fa-twitter"></i>
+                </a>
+            </div>
+        </section>
+        <p class="copyright">Copyright © 2022</p>
+    </footer>
 </body>
 </html>
