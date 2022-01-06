@@ -20,6 +20,8 @@ html, body {
     background: var(--primary-color);
     color: var(--accent-color);
     font-family: var(--typography);
+    overflow-x: hidden;
+    position: relative;
 }
   
 body {
@@ -56,12 +58,16 @@ span {
 
 li {
     list-style: none;
-    padding: 0 0rem 0 1rem;
+    padding: 0 2rem;
 }
 
 li a {
     color: var(--accent-color);
     text-decoration: none;
+}
+
+.links {
+    padding: 0 1rem;
 }
 
 .login {
@@ -78,15 +84,110 @@ header {
 .slider {
     display: flex;
     flex-direction: row;
-    height: 47.5vh;
 }
 
-.slider img {
-    object-fit: cover;
-    object-position: center;
-    width: 50%;
+/* Slider */
+.carousel {
+    position: relative;
 }
-  
+
+.carousel-inner {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+
+.carousel-open:checked + .carousel-item {
+    position: static;
+    opacity: 100;
+}
+
+.carousel-item {
+    position: absolute;
+    opacity: 0;
+}
+
+.carousel-item img {
+    display: block;
+    height: 500px;
+    object-fit: cover;
+    width: 990px;
+}
+
+.carousel-control {
+    background: rgba(0, 0, 0, 0.28);
+    border-radius: 50%;
+    color: #fff;
+    cursor: pointer;
+    display: none;
+    font-size: 40px;
+    height: 40px;
+    line-height: 35px;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translate(0, -50%);
+    cursor: pointer;
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    text-align: center;
+    width: 40px;
+    z-index: 10;
+}
+
+.carousel-control.prev {
+    left: 2%;
+}
+
+.carousel-control.next {
+    right: 2%;
+}
+
+.carousel-control:hover {
+    background: rgba(0, 0, 0, 0.8);
+    color: #aaaaaa;
+}
+
+#carousel-1:checked ~ .control-1,
+#carousel-2:checked ~ .control-2,
+#carousel-3:checked ~ .control-3 {
+    display: block;
+}
+
+.carousel-indicators {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    bottom: 2%;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 10;
+}
+
+.carousel-indicators li {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.carousel-bullet {
+    color: #fff;
+    cursor: pointer;
+    display: block;
+    font-size: 35px;
+}
+
+.carousel-bullet:hover {
+    color: #aaaaaa;
+}
+
+#carousel-1:checked ~ .control-1 ~ .carousel-indicators li:nth-child(1) .carousel-bullet,
+#carousel-2:checked ~ .control-2 ~ .carousel-indicators li:nth-child(2) .carousel-bullet,
+#carousel-3:checked ~ .control-3 ~ .carousel-indicators li:nth-child(3) .carousel-bullet {
+    color: #428bca;
+}
+
+/* ... */
 .header-content {
     display: flex;
     flex-direction: column;
@@ -94,9 +195,9 @@ header {
 }
 
 .header-content h2 {
-    font-size: 2rem;
+    font-size: 7.5rem;
     letter-spacing: 0.1rem;
-    padding: 1rem;
+    padding: 1rem 1.5rem;
     text-transform: uppercase;
 }
 
@@ -110,4 +211,5 @@ main {
 footer {
     background: var(--tertiary-color);
     padding: 1rem;
+    text-align: center;
 }
