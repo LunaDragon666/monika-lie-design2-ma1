@@ -372,7 +372,7 @@ main {
   }
 
   .category-link {
-    background: rgba(255, 255, 255, 0.4);
+    background: rgba(255, 255, 255, 0.6);
     position: absolute;
     z-index: 1;
     bottom: 0;
