@@ -1,1 +1,27 @@
-
+@media (max-width: 990px) {
+    .container {
+        grid-template-areas:
+          "content-1"
+          "sidebar"
+          "content-3"
+          "content-2";
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+      }
+      .ctabtn {
+        left: 30%;
+    }
+    .tag {
+        left: 35%;
+    }
+    .cont {
+        grid-template-areas:
+          "main"
+          "cont-1"
+          "cont-2"
+          "cont-3"
+          "cont-4";
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+      }
+}
