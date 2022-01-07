@@ -1,7 +1,4 @@
 @media (max-width: 990px) {
-  .featured {
-    margin-top: -2rem;
-}
   .container {
       grid-template-areas:
         "content-1"
