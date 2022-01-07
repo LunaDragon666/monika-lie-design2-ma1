@@ -13,24 +13,34 @@
 </head>
 <body>
     <!-- Navigation bar -->
-    <nav>
-            <a class="home-link" href="index.html">
-                <img class="logo" src="img/logo.svg" alt="#">
-                <h1>Homedec<span>.</span></h1>
-            </a>
-        <ul>
-            <li>
-                <a href="#">Rooms</a>
-            </li>
-            <li>
-                <a href="#">Decor</a>
-            </li>
-            <li>
-                <a href="#">About</a>
-            </li>
-            <li>
-                <a href="#">Contact</a>
-            </li>
+    <nav role='navigation'>
+        <a class="home-link" href="index.html">
+            <img class="logo" src="img/logo.svg" alt="#">
+            <h1>Homedec<span>.</span></h1>
+        </a>
+        <ul class="main-menu">
+          <li><a href="#">Decor &#43;</a>
+            <ul class="dropdown">
+              <li><a href="">Baskets & bins</a></li>
+              <li><a href="">Candles & lightning</a></li>
+              <li><a href="">Faux plants</a></li>
+              <li><a href="">Home accents</a></li>
+              <li><a href="">Mirrors</a></li>
+              <li><a href="">Rugs</a></li>
+              <li><a href="">Wallart</a></li>
+            </ul>
+          </li>
+              <li><a href="#">Rooms &#43;</a>
+            <ul class="dropdown">
+              <li><a href="">Bathroom</a></li>
+              <li><a href="">Bedroom</a></li>
+              <li><a href="">Kitchen</a></li>
+              <li><a href="">Living room</a></li>
+              <li><a href="">Office</a></li>
+            </ul>
+          </li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
         </ul>
         <ul class="user">
             <li class="links">
@@ -45,47 +55,15 @@
             </li>
             <button class="login">Login</button>
         </ul>
-    </nav>
+      </nav> 
     <!-- Header content -->
-        <header class="slider">
-            <!-- Slider -->
-            <section class="carousel">
-                <div class="carousel-inner">
-                    <input class="carousel-open" type="radio" id="carousel-1" name="carousel" aria-hidden="true" hidden="" checked="checked">
-                    <div class="carousel-item">
-                        <img src="img/carousel/slider.jpg">
-                    </div>
-                    <input class="carousel-open" type="radio" id="carousel-2" name="carousel" aria-hidden="true" hidden="">
-                    <div class="carousel-item">
-                        <img src="img/header.jpg">
-                    </div>
-                    <input class="carousel-open" type="radio" id="carousel-3" name="carousel" aria-hidden="true" hidden="">
-                    <div class="carousel-item">
-                        <img src="img/carousel/slider.jpg">
-                    </div>
-                    <label for="carousel-3" class="carousel-control prev control-1">‹</label>
-                    <label for="carousel-2" class="carousel-control next control-1">›</label>
-                    <label for="carousel-1" class="carousel-control prev control-2">‹</label>
-                    <label for="carousel-3" class="carousel-control next control-2">›</label>
-                    <label for="carousel-2" class="carousel-control prev control-3">‹</label>
-                    <label for="carousel-1" class="carousel-control next control-3">›</label>
-                    <ol class="carousel-indicators">
-                        <li>
-                            <label for="carousel-1" class="carousel-bullet">•</label>
-                        </li>
-                        <li>
-                            <label for="carousel-2" class="carousel-bullet">•</label>
-                        </li>
-                        <li>
-                            <label for="carousel-3" class="carousel-bullet">•</label>
-                        </li>
-                    </ol>
-                </div>
-            </section>
-            <section class="header-content">
-                <h2>Create your perfect space</h2>
-            </section>
-        </header>
+    <header class="header">
+        <section class="header-content">
+            <h2>Create your perfect space</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente adipisci omnis est iusto excepturi quasi voluptatem.</p>
+            <a class="main-cta" href="#">Our collection</a>
+        </section>
+                </header>
     <!-- Homepage's main content -->
     <main>
         <!-- Product/Sale section -->
@@ -177,57 +155,9 @@
         </section>
         </main>
     <footer>
-        <section class="footer-columns">
-            <!-- Contact section -->
-            <div class="footer-column">
-                <h3>Contact</h3>
-                <b>Head office:</b>
-                <div class="adress-box">
-                    <p>696 Santa Clara Court</p>
-                    <p>Norwalk, CT 06851</p>
-                </div>
-                <p>+1-202-555-0137</p>
-                <a class="contact-link">costumerservice@homedec.com</a>
-            </div>
-            <!-- ... -->
-            <div class="footer-column">
-                <h3>Our products</h3>
-                <ul class="navigation">
-                    <li class="footer-links">
-                        <a href="#">Baskets & bins</a>
-                    </li>
-                    <li class="footer-links">
-                        <a href="#">Candles & lightning</a>
-                    </li>
-                    <li class="footer-links">
-                        <a href="#">Faux plants</a>
-                    </li>
-                    <li class="footer-links">
-                        <a href="#">Home accents</a>
-                    </li>
-                    <li class="footer-links">
-                        <a href="#">Mirrors</a>
-                    </li>
-                    <li class="footer-links">
-                        <a href="#">Rugs</a>
-                    </li>
-                    <li class="footer-links">
-                        <a href="#">Wallart</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- Subscribtion field -->
-            <div class="footer-column">
-                <h3>News</h3>
-                <p>Stay Updated on our newest, coming collections</p>
-                <form class="subscribe">
-                    <input type="text" placeholder="Your emial" name="email">
-                    <button class="confirm">Subscribe</button>
-                </form>
-            </div>
-            <!-- Social media -->
-            <div class="footer-column">
-                <h3>Follow</h3>
+        <p class="copyright">.</p>
+        <p class="copyright">Copyright © 2022</p>
+        <section class="media-links">
                 <a class="social-links">
                     <i class="fab fa-facebook-f"></i>
                 </a>
@@ -237,9 +167,7 @@
                 <a class="social-links">
                     <i class="fab fa-twitter"></i>
                 </a>
-            </div>
-        </section>
-        <p class="copyright">Copyright © 2022</p>
+            </section>
     </footer>
 </body>
 </html>
