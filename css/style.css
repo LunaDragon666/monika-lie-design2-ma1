@@ -52,7 +52,7 @@ a {
 li {
     list-style: none;
 }
-/*Início das configurações da header*/
+
 .h {
     position: absolute;
     width: 100%;
@@ -62,11 +62,8 @@ li {
     text-align: center;
     font-family: sans-serif;
     z-index: 999;
-    /* background: rgb(221 203 187 / 50%); */
 }
 .brand {
-    /* align-items: center; */
-    /* display: flex; */
     width: auto;
     height: 100%;
     float: left;
@@ -85,11 +82,11 @@ li {
     width: 100%;
     height: inherit;
     padding: 0;
-    display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
-    display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
-    display: -ms-flexbox;      /* TWEENER - IE 10 */
-    display: -webkit-flex;     /* NEW - Chrome */
-    display: flex;             /* NEW, Spec - Opera 12.1, Firefox 20+ */
+    display: -webkit-box;      
+    display: -moz-box;        
+    display: -ms-flexbox;      
+    display: -webkit-flex;    
+    display: flex;             
 }
 .menu ul a {
     width: 14%;
@@ -151,7 +148,6 @@ li {
     }
     #menuToggle:checked ~ ul {
         max-height: 350px;
-        /*Para fazer com que o menu saia da esquerda ou direita, você deve trocar max-height por max-width*/
     }
     .menu-icon i {
         font-size: 1.7em;
@@ -179,7 +175,7 @@ header {
 }
 
 .header-content {
-        left: 58%;
+        left: 58.25%;
         position: absolute;
         text-align: left;
         top: 20%;
@@ -330,7 +326,7 @@ main {
     max-width: 1280px;
     margin: 0 auto;
     padding: 2rem 2rem;
-  }
+}
 
   .cont img {
     height: 100%;
