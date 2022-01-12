@@ -138,6 +138,10 @@ header, .headerdecor {
   position: relative;
 }
 
+.headerdecor {
+  background: url("../img/headerdecor.jpg") center bottom no-repeat;
+}
+
 /* Homepage's main content */
 main {
     flex: 1 1 100%;
