@@ -70,10 +70,7 @@ float: left;
 width: 50%;
 }
 
-.product-price {
-font-size: 18px;
-font-weight: bold;
-}
+.product-price {font-size: 24px;font-weight: bold;}
 
 .product-price small {
 font-size: 80%;
@@ -127,8 +124,4 @@ font-size: 17px;
     .morebtn:hover {
         background: rgba(255, 255, 255, 0.5);
         color: var(--accent-color);
-    }
-
-    .icons {
-        width: 30px;
     }
