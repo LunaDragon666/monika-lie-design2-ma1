@@ -128,3 +128,7 @@ font-size: 17px;
         background: rgba(255, 255, 255, 0.5);
         color: var(--accent-color);
     }
+
+    .icons {
+        width: 30px;
+    }
