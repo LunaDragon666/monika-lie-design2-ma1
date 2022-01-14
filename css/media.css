@@ -1,4 +1,8 @@
-/* mobile breakpoint start */
+@media screen and (max-width: 1280px) {
+  .card-container {
+    margin: 4rem auto 3em;
+    }
+}
 @media screen and (max-width: 1024px) {
   .container {
     max-width: 720px;
