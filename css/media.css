@@ -41,10 +41,14 @@
     overflow: visible;
     padding-top: 30px;
   }
-  /* navbar css for mobile end */
+  .headercont h1 {
+    font-size: 2.5rem !important;
 }
-/* mobile breakpoint end */
-
+.card-container {
+  grid-gap: 24px 40px !important;
+  margin: 1.5rem auto 3.5rem;
+  }
+}
 
 @media (max-width: 990px) {
   .container {
@@ -72,15 +76,15 @@
       grid-template-columns: 1fr;
       grid-template-rows: 1fr;
     }
-    header {
+    header, .headerdecor {
       min-height: 41vh;
   }
-    .header-content {
-      left: 40%;
-      top: 15%;
+  .headercont {
+    left: 45% !important;
+    top: 30% !important;
 }
-    .header-content h2 {
-      font-size: 2rem;
+.product-card {
+  width: 300px !important;
   }
   footer {
     flex-direction: column;
