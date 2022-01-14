@@ -77,11 +77,21 @@
       grid-template-rows: 1fr;
     }
     header, .headerdecor {
-      min-height: 50vh;
+      min-height: 41vh;
   }
   .headercont {
     left: 45% !important;
     top: 30% !important;
+}
+.heading {
+  padding: 2rem 2rem 3rem;
+  text-align: left;
+}
+.heading h2 {
+  font-size: 1.3rem;
+}
+.heading p {
+  font-size: 1rem;
 }
 .card-container {
   grid-template-columns: repeat(auto-fill, 321px) !important;
