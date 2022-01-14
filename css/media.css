@@ -83,6 +83,9 @@
     left: 45% !important;
     top: 30% !important;
 }
+.card-container {
+  grid-template-columns: repeat(auto-fill, 321px) !important;
+  }
 .product-card {
   width: 321px !important;
   }
