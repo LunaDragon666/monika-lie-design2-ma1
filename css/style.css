@@ -47,6 +47,7 @@ body {
     justify-content: space-evenly;
     z-index: 1;
     align-items: center;
+    margin-top: 1rem;
   }
   a.site-logo {
     font-size: 25px;
@@ -131,7 +132,7 @@ header {
   box-shadow: 0 3px 10px -2px rgba(0,0,0,.1);
   min-height: 67vh;
   background-position: center;
-  margin-top: -4rem;
+  margin-top: -5rem;
   position: relative;
 }
 
@@ -141,7 +142,7 @@ header {
   box-shadow: 0 3px 10px -2px rgba(0,0,0,.1);
   min-height: 67vh;
   background-position: center;
-  margin-top: -4rem;
+  margin-top: -5rem;
   position: relative;
 }
 
