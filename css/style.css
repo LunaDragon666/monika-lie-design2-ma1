@@ -144,6 +144,8 @@ header {
   background-position: center;
   margin-top: -5rem;
   position: relative;
+  opacity: 0.95;
+  filter: alpha(opacity=95); /* For IE8 and earlier */
 }
 
 /* Homepage's main content */
