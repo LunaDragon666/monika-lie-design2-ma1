@@ -1,13 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
 
+@font-face {
+  font-family: 'Moontime-Regular';
+  src: url(../fonts/MoonTime-Regular.ttf) format('truetype');
+}
+
 :root {
-    --primary-color: #ece3da;
+    --primary-color: #f8faf9;
     --typography: 'Work Sans', sans-serif; 
-    --dropdown-color: #f2e3b3;
+    --dropdown-color: #ffe9e0;
     --tertiary-color: #f2c166;
-    --secondary-color: #d9984a; 
+    --secondary-color: #ffb843; 
     --cta-color: #304d63; 
-    --accent-color: #063258;
+    --accent-color: #113963;
 }
 
 ::-webkit-scrollbar {
@@ -37,17 +42,28 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    background-color: #ece3da;
+    background-color: #fff2ee;
     background-image: url("https://www.transparenttextures.com/patterns/absurdity.png");
 }
 
 /* navbar regular css start */
+.userbar {
+    background: var(--secondary-color);
+    color: var(--primary-color);
+    padding: 0.5rem 0.5em;
+    text-align: center;
+}
+
+.ship {
+    font-size: 14px;
+}
+
 .navbar {
-    display: flex;
-    justify-content: space-evenly;
-    z-index: 1;
-    align-items: center;
-    margin-top: 1rem;
+  background: var(--primary-color);
+  display: flex;
+  justify-content: space-between;
+  z-index: 1;
+  align-items: center;
   }
   a.site-logo {
     font-size: 25px;
@@ -86,7 +102,7 @@ text-decoration: underline;
 text-underline-offset: 5px;
 }
   .navbar ul li a:hover {
-    background: var(--tertiary-color);
+    color: var(--secondary-color);
   }
   
   /* nav-toggler css start */
@@ -132,7 +148,6 @@ header {
   box-shadow: 0 3px 10px -2px rgba(0,0,0,.1);
   min-height: 67vh;
   background-position: center;
-  margin-top: -5rem;
   position: relative;
 }
 
@@ -151,12 +166,12 @@ header {
 /* Homepage's main content */
 main {
     flex: 1 1 100%;
-    margin: 2rem 0 0;
+    margin: 2rem 0 4rem;
 }
 
 /* Product/Sale section */
 .heading {
-    background: rgba(255, 255, 255, 0.4);
+    background: rgba(248, 250, 249, 0.5);
     margin: 0 auto 0;
     padding: 5rem;
     text-align: center;
@@ -164,9 +179,10 @@ main {
 }
 
 .heading h2 {
-    font-size: 2rem;
-    padding-bottom: 1rem;
-    text-transform: uppercase;
+  font-family: 'Moontime-Regular';
+  font-size: 7rem;
+  padding-bottom: 1rem;
+  margin-top: -2rem;
 }
 
 .heading p {
@@ -188,7 +204,7 @@ main {
 
   .container img {
       height: 100%;
-      filter: brightness(0.9);
+      filter: brightness(0.65);
       object-fit: cover;
       position: relative;
       transition: 0.5s;
@@ -196,7 +212,7 @@ main {
   }
 
     .container img:hover {
-      filter: brightness(0.75);
+      filter: brightness(1);
   }
   
   .sidebar {
@@ -232,9 +248,9 @@ main {
 }
 
 .ctabtn {
-    background: rgba(255, 255, 255, 0.5);
+    background: var(--accent-color);
     border: 2px solid var(--accent-color);
-    color: var(--accent-color);
+    color: var(--primary-color);
     cursor: pointer;
     font-weight: bold;
     padding: 1rem 3rem;
@@ -248,9 +264,9 @@ main {
 }
 
 .ctabtn:hover {
-    background: var(--accent-color);
+    background: var(--secondary-color);
+    border: 2px solid var(--secondary-color);
     color: var(--primary-color);
-    font-weight: normal;
 }
 
 /* Categories section */
@@ -269,7 +285,7 @@ main {
 
   .cont img {
     height: 100%;
-    filter: brightness(0.9);
+    filter: brightness(0.65);
     object-fit: cover;
     position: relative;
     transition: 0.4s;
@@ -281,7 +297,7 @@ main {
 }
 
 .cont img:hover {
-    filter: brightness(0.75);
+    filter: brightness(1);
 }
   
   .main {
@@ -305,40 +321,31 @@ main {
   }
 
   .category-link {
-    background: rgba(255, 255, 255, 0.6);
     position: absolute;
     z-index: 1;
     bottom: 0;
-    padding: 1rem 1.75rem 1.75rem;
+    padding: 1rem 1.75rem 1.5rem;
     width: 100%;
-}
-
-.category-link a {
-    color: var(--accent-color);
-    text-decoration: underline 2px solid var(--secondary-color);
-    text-underline-offset: 0.3rem;
-    transition: 0.25s;
-    }
-
-.cta-link:hover {
-    letter-spacing: 0.25rem;
 }
 
 .category-link h3 {
     font-size: 1.5rem;
     padding-bottom: 0.25rem;
     text-transform: uppercase;
-}
-
-.category-link a, .category-link h3 {
-    letter-spacing: 0.2rem;
+    color: var(--primary-color);
+    letter-spacing: 0.15rem;
+    border-bottom: 5px solid var(--secondary-color);
+    width: 25px;
 }
 
 .sale-tag {
-    background: rgba(255, 255, 255, 0.6);
+    color: var(--primary-color);
+    /* background: rgba(255, 255, 255, 0.6); */
+    cursor: pointer;
     padding: 1rem;
     position: absolute;
-    bottom: 0;
+    bottom: -40%;
+    height: 100%;
     width: 100%;
     font-size: 1.5rem;
     font-weight: bold;
@@ -350,10 +357,42 @@ main {
     margin-top: -2rem;
 }
 
+.btn {
+    background: var(--accent-color);
+    border: 2px solid var(--accent-color);
+    color: var(--primary-color);
+    font-weight: bold;
+    padding: 1rem 3rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.25s;
+}
+
+.btn:hover {
+    background: var(--secondary-color);
+    border: 2px solid var(--secondary-color);
+    color: var(--primary-color);
+}
+
+.btn-wrap {
+    margin: 2rem 0 3rem;
+    text-align: center;
+}
+
+.categories {
+    margin-top: 3rem;
+}
+
+hr {
+    border: 3px solid var(--secondary-color);
+    margin: 1rem auto 0;
+    width: 50px;
+}
+
 /* Footer section */
 footer {
-    background: var(--tertiary-color);
-    padding: 1.5rem;
+    background: var(--secondary-color);
+    padding: 3rem 0 2.5rem;
     text-align: center;
 }
 
