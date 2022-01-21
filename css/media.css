@@ -2,12 +2,16 @@
   .card-container {
     margin: 2rem auto 3em !important;
     }
+    .header-content {font-size: 48px !important;}
 }
 @media screen and (max-width: 1024px) {
   .container {
     max-width: 720px;
   }
   /* navbar css for mobile start */
+  .userbar {
+    background: #ff9b2e;
+}
   .nav-toggler{
     display: block;
   }
@@ -18,12 +22,12 @@
   .navbar ul {
     position: absolute;
     width: 100%;
-    height: calc(100vh - 95px);
+    height: calc(100vh - 60px);
     left: 0;
-    top: 95px;
+    top: 60px;
     flex-direction: column;
     align-items: center;
-    background-color: var(--tertiary-color);
+    background-color: #ff9b2e;
     max-height: 0;
     overflow: hidden;
     transition: .3s;
@@ -37,14 +41,20 @@
     padding: 25px;
   }
   .navbar ul li a:hover {
-    background-color: var(--accent-color);
-    color: var(--primary-color);
+    background-color: var(--secondary-color);
+    color: var(--assent-color);
+    text-decoration: none;
   }
   .navbar ul.open {
-    max-height: 60vh;
+    max-height: 56vh;
     overflow: visible;
     padding-top: 30px;
   }
+  .login-btn {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    padding-top: 2rem;
+}
   .headercont h1 {
     font-size: 2.5rem !important;
 }
@@ -58,6 +68,9 @@
 }
 
 @media (max-width: 990px) {
+  .ad {
+    display: none;
+  }
   .container {
       grid-template-areas:
         "content-1"
@@ -86,6 +99,11 @@
     header, .headerdecor {
       min-height: 41vh;
   }
+      .header-content {
+        font-size: 36px !important;
+        left: 5%;
+        top: 5%;
+}
   .headercont {
     left: 45% !important;
     top: 30% !important;
@@ -95,7 +113,7 @@
   text-align: left;
 }
 .heading h2 {
-  font-size: 1.6rem;
+  font-size: 3.5rem;
 }
 .heading p {
   font-size: 1.25rem;
