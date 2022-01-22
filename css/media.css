@@ -2,7 +2,9 @@
   .card-container {
     margin: 2rem auto 3em !important;
     }
-    .header-content {font-size: 48px !important;}
+    .header-content {
+      font-size: 48px !important;
+    }
 }
 @media screen and (max-width: 1024px) {
   .container {
@@ -47,7 +49,7 @@
     text-decoration: none;
   }
   .navbar ul.open {
-    max-height: 78vh;
+    max-height: 80vh;
     overflow: visible;
     padding-top: 56px;
   }
