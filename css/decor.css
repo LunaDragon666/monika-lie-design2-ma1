@@ -62,7 +62,7 @@ padding: 30px;
 }
 
 .product-details h3 a:hover {
-color: var(--tertiary-color);
+color: var(--secondary-color);
 }
 
 .product-bottom-details {
