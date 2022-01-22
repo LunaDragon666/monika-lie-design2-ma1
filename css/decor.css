@@ -59,6 +59,7 @@ padding: 30px;
     transition: 0.3s;
     letter-spacing: 0.15rem;
     line-height: 1.75rem;
+    font-size: 20px;
 }
 
 .product-details h3 a:hover {
@@ -70,7 +71,11 @@ color: var(--secondary-color);
     padding-top: 20px;
 }
 
-.product-bottom-details div {float: left;letter-spacing: 0.2rem;width: 50%;}
+.product-bottom-details div {
+    float: left;
+    letter-spacing: 0.2rem;
+    width: 50%;
+    }
 
 .product-price {
     font-size: 24px;
