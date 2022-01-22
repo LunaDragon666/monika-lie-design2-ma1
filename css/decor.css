@@ -105,7 +105,7 @@ text-align: right;
 
 .card-container {
     display: grid;
-    grid-template-columns: repeat(auto-fill, 290px);
+    grid-template-columns: repeat(auto-fill, 289px);
     justify-content: center;
     grid-gap: 25px 20px;
     margin: 1.5rem auto 3.5rem;
