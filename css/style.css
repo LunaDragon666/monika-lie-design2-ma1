@@ -379,13 +379,13 @@ main {
     color: var(--primary-color);
     letter-spacing: 0.25rem;
     border-bottom: 5px solid var(--secondary-color);
+    text-shadow: 1px 1px var(--accent-color);
     width: 50px;
 }
 
 .sale-tag {
     color: var(--primary-color);
     text-shadow: 1px 1px var(--accent-color);
-    /* background: rgba(255, 255, 255, 0.6); */
     font-family: playfair-display, serif;
     cursor: pointer;
     padding: 1rem;
