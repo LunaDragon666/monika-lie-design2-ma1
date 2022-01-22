@@ -139,7 +139,7 @@
   width: 321px !important;
   }
   .product-catagory {
-    font-size: 14px;
+    font-size: 14px !important;
   }
   footer {
     flex-direction: column;
