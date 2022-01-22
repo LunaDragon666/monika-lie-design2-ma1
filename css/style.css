@@ -172,10 +172,11 @@ header {
 }
 
 .header-content {
+    background: rgba(248, 250, 249, 0.25);
     font-family: 'Moontime-Regular';
     font-size: 72px;
-    left: 30%;
-    padding: 1rem;
+    left: 25%;
+    padding: 2rem 5rem 3rem;
     position: absolute;
     top: 10%;
 }
