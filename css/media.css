@@ -87,6 +87,7 @@
       height: 300px; 
 }
     .ctabtn {
+      bottom: 37%;
       left: 20%;
   }
   .tag {
@@ -102,6 +103,12 @@
       grid-template-columns: 1fr;
       grid-template-rows: 1fr;
     }
+    .cont img {
+      height: 300px;
+}
+.category-link {
+  bottom: 10px;
+}
     header, .headerdecor {
       min-height: 41vh;
   }
