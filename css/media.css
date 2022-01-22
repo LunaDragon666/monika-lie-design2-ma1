@@ -69,6 +69,9 @@
 }
 
 @media (max-width: 990px) {
+  p {
+    font-size: 14px !important;
+  }
   .ad {
     display: none;
   }
@@ -82,7 +85,7 @@
       grid-template-rows: 1fr;
     }
     .ctabtn {
-      left: 24%;
+      left: 16%;
   }
   .tag {
       left: 35%;
