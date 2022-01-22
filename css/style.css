@@ -199,7 +199,7 @@ header {
   box-shadow: 0 3px 10px -2px rgba(0,0,0,.1);
   min-height: 67vh;
   background-position: center;
-  margin-top: -5rem;
+  margin-top: 0;
   position: relative;
   opacity: 0.95;
   filter: alpha(opacity=95); /* For IE8 and earlier */
@@ -228,7 +228,7 @@ main {
 }
 
 .heading p {
-    letter-spacing: 0.015rem;
+    letter-spacing: 0.05rem;
 }
 
 .container {
@@ -310,6 +310,7 @@ main {
     background: var(--secondary-color);
     border: 2px solid var(--secondary-color);
     color: var(--primary-color);
+    text-shadow: 1px 1px #ff9b2e;
 }
 
 /* Categories section */
@@ -421,6 +422,7 @@ main {
     background: var(--secondary-color);
     border: 2px solid var(--secondary-color);
     color: var(--primary-color);
+    text-shadow: 1px 1px #ff9b2e;
 }
 
 .btn-wrap {
